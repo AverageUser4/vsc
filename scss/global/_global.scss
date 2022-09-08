@@ -1,0 +1,17 @@
+@use 'var';
+
+button {
+  border: none;
+  font-size: 1em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cool-button {
+  color: white;
+  background-color: var.$blue-light;
+  &:hover {
+    background-color: var.$blue-dark;
+  }
+}
