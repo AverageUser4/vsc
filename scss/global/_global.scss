@@ -50,8 +50,20 @@ ul {
   }
 }
 
-.download-button {
+.generic-link {
+  color: var.$blue-lighter;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
+.download-button {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  align-content: center;
+  column-gap: 6px;
+  font-weight: bold;
 }
 .download-button__top {
 

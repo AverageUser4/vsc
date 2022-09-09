@@ -1,0 +1,9 @@
+@use '../global/var';
+
+.first-article {
+  background-color: var.$lighter-black;
+}
+
+.first-article__header {
+  margin: 0;
+}

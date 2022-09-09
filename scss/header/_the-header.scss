@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   background-color: var.$lighter-black;
+  box-shadow: 0px -10px 26px 0px rgba(17, 17, 17, 1);
 }
 
 .the-header-content {
@@ -16,11 +17,10 @@
   max-width: var.$width-cap;
   margin: auto;
 
-  // change to auto when opened
-  max-height: 50px;
+  height: 50px;
   overflow: hidden;
 
-  transition: max-height 300ms;
+  transition: height 300ms;
 }
 
 .the-header__logo-container {
@@ -59,13 +59,20 @@
   padding: 16px 0 0;
 }
 
+.the-header__nav-list-desktop-free-space {
+  display: none;
+}
+
 .the-header__nav-list-link {
   padding-left: 12px;
   color: white;
 }
 
+.the-header__nav-search-desktop-content-container {
+  display: none;
+}
+
 .the-header__nav-download-button {
-  display: block;
   padding: 16px 0 16px 12px;
 }
 

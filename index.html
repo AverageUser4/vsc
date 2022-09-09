@@ -37,11 +37,25 @@
           <li><a class="the-header__nav-list-link" href="javascript:void(0)">Extensions</a></li>
           <li><a class="the-header__nav-list-link" href="javascript:void(0)">FAQ</a></li>
           <li><a class="the-header__nav-list-link" href="javascript:void(0)">Learn</a></li>
-          <li><a class="the-header__nav-list-link" href="javascript:void(0)">Search</a></li>
+
+          <li class="the-header__nav-list-desktop-free-space"></li>
+
           <li>
-            <a class="cool-button the-header__nav-list-link the-header__nav-download-button" href="javascript:void(0)">
+              <a class="the-header__nav-list-link the-header__nav-search-mobile-content" href="javascript:void(0)">Search</a>
+
+              <div class="the-header__nav-search-desktop-content-container">
+
+                <a class="the-header__nav-list-link" href="javascript:void(0)"><img class="the-header__nav-search-image" src="resources/images/search-icon.svg"></a>
+                <input class="the-header__nav-search-input" type="text" placeholder="Search Docs">
+
+              </div>
+          </li>
+
+
+          <li>
+            <a class="download-button cool-button the-header__nav-list-link the-header__nav-download-button" href="javascript:void(0)">
               <img class="download-button__icon" src="resources/images/download-icon.svg">
-              <span>Download</span>
+              <span class="download-button__top-span">Download</span>
             </a>
           </li>
   
@@ -61,6 +75,85 @@
     </div>
 
   </header>
+
+  <section class="news-on-top">
+
+    <a class="generic-link" href="javascript:void(0)">Version 1.71</a> is now available!
+    Read about the new features and fixes from August.
+
+  </section>
+
+  <main class="the-main">
+
+    <article class="first-article">
+
+      <h1 class="first-article__header">
+        Code Editing. 
+        <span class="first-article__header-span">Redefined.</span>
+      </h1>
+
+      <span class="first-article__span-under-header">Free. Built on open source. Runs everywhere.</span>
+
+      <div class="first-article__buttons-container">
+
+        <a class="cool-button download-button" href="javascript:void(0)">
+
+          <div class="download-button__top">
+
+            <img class="download-button__top-icon" src="resources/images/download-icon.svg">
+            <span class="download-button__top-span">.deb</span>
+
+          </div>
+
+          <span class="download-button__bottom-span">Debian, Ubuntu...</span>
+
+        </a>
+
+        <a class="cool-button download-button" href="javascript:void(0)">
+
+          <div class="download-button__top">
+
+            <img class="download-button__top-icon" src="resources/images/download-icon.svg">
+            <span class="download-button__top-span">.rpm</span>
+
+          </div>
+
+          <span class="download-button__bottom-span">Red Hat, Fedora...</span>
+
+        </a>
+
+        <button class="cool-button">
+
+          <img src="resources/images/arrow-down.svg">
+
+        </button>
+
+      </div>
+
+      <div class="first-article__buttons-prompt">
+
+        <a class="generic-link first-article__buttons-prompt-link" href="javascript:void(0)">Web</a>,
+        <a class="generic-link first-article__buttons-prompt-link" href="javascript:void(0)">Insiders edition</a> or
+        <a class="generic-link first-article__buttons-prompt-link" href="javascript:void(0)">other platforms</a>
+
+      </div>
+
+      <div class="first-article__agreement">
+
+        By using VS Code, you agree to its 
+        <a class="generic-link first-article__agreement-link" href="javascript:void(0)">license and privacy statement</a>.
+
+      </div>
+
+      <div class="first-article__image-container">
+
+        <img src="resources/images/home-screenshot-linux.png">
+
+      </div>
+
+    </article>
+
+  </main>
 
 </body>
 

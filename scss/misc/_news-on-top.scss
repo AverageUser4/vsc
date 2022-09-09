@@ -1,0 +1,9 @@
+@use '../global/var';
+
+.news-on-top {
+  text-align: center;
+  padding: 12px 32px;
+  line-height: 150%;
+  background-color: var.$light-black;
+  color: var.$darkest-white;
+}

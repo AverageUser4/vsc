@@ -1,14 +1,3 @@
-/*
-  when .the-header__button is pressed:
-    - change the height of .the-header-content to auto
-    - it should be animated with transition
+import Heador from './classes/Heador.js';
 
-*/
-
-const content = document.querySelector('.the-header-content');
-const button = document.querySelector('.the-header__menu-button');
-
-button.addEventListener('click', () => {
-  console.log('clicked')
-  content.style.maxHeight = 'auto';
-});
+const heador = new Heador();
