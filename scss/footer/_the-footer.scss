@@ -1,0 +1,131 @@
+@use '../global/var';
+
+.the-footer {
+  padding: 26px 16px;
+  color: #fff;
+  background-color: var.$the-lightest-black;
+}
+
+.the-footer-content {
+  display: grid;
+  row-gap: 32px;
+  grid-template-areas: 
+    "part-1 part-1"
+    "part-2 part-2"
+    "part-3 part-3";
+
+  max-width: var.$width-cap;
+  margin: auto;
+}
+
+.the-footer__part-1 {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 32px;
+  align-items: center;
+
+  grid-area: part-1;
+
+  font-size: 14px;
+}
+
+.the-footer__github-buttons-container {
+  display: flex;
+  column-gap: 6px;
+}
+
+.the-footer__github-related-button {
+  display: block;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid #d5d5d5;
+  background-color: #eee;
+  border-radius: 3px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.the-footer__github-button {
+  &:hover {
+    background-color: #dfdfdf;
+  }
+}
+
+.the-footer__github-icon {
+  width: 12px;
+}
+
+.the-footer__github-button-span {
+  position: relative;
+  top: -2px;
+}
+
+.the-footer__github-amount-button {
+  position: relative;
+
+  &:hover {
+    color: var.$blue-light;
+  }
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 5px;
+    left: -10px;
+
+    border: 5px solid;
+    border-color: transparent #eee transparent transparent;
+  }
+}
+
+.the-footer__logo {
+  width: 94px;
+}
+
+.the-footer__part-2 {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 32px;
+
+  grid-area: part-2;
+
+  font-size: 12px;
+}
+
+.the-footer__part-3 {
+  display: grid;
+  row-gap: 4px;
+
+  grid-area: part-3;
+
+  font-size: 12px;
+}
+
+@media(min-width: 600px) {
+
+  .the-footer-content {
+    grid-template-areas: 
+      "part-1 part-1"
+      "part-2 part-3";
+  }
+
+  .the-footer__part-3 {
+    justify-content: end;
+  }
+
+}
+
+@media(min-width: 980px) {
+
+  .the-footer-content {
+    grid-template-areas:
+      "part-1 part-2"
+      "part-3 part-3";
+  }
+
+  .the-footer__part-2 {
+    justify-content: end;
+  }
+
+}

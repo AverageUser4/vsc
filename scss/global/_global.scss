@@ -17,9 +17,6 @@
 }
 
 body {
-  height: 5000px;
-
-  background-color: #777;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -54,6 +51,13 @@ ul {
   color: var.$blue-lighter;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.cool-link {
+  color: white;
+  &:hover {
+    color: rgb(180, 160, 255);
   }
 }
 

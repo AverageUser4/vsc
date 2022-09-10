@@ -1,0 +1,44 @@
+@use '../global/var';
+
+.languages-article {
+  background-color: var.$dark-white;
+}
+
+.languages-article-content {
+  margin: auto;
+  padding: 64px 32px;
+  max-width: var.$width-cap;
+  color: #444;
+  text-align: center;
+}
+
+.languages-article__header {
+  margin: 0 0 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.languages-article__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  justify-content: center;
+  gap: 20px 80px;
+
+  margin-bottom: 26px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.languages-article__list-item {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.languages-article__get-started-link {
+  display: block;
+  margin: 48px auto 0;
+  padding: 16px 32px;
+  width: max-content;
+  font-size: 20px;
+}

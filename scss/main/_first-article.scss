@@ -95,8 +95,11 @@
 
   .first-article {
     grid-template-columns: repeat(2, auto);
-    align-items: center;
     column-gap: 32px;
+  }
+
+  .first-article__header {
+    margin-top: 38px;
   }
 
 }
