@@ -1,0 +1,76 @@
+@use '../global/var';
+
+.template-article {
+  padding: 32px;
+  background-color: #fff;
+  &:nth-of-type(even) {
+    background-color: var.$dark-white;
+  }
+}
+
+.template-article-content {
+  display: grid;
+  justify-items: center;
+
+  max-width: var.$width-cap;
+  margin: auto;
+}
+
+.template-article__text-container {
+  color: #444;
+  grid-row: 2;
+}
+
+.template-article__header {
+  margin: 0;
+  font-size: 20px;
+}
+
+.template-article__paragraph {
+  margin-bottom: 0;
+  line-height: 150%;
+}
+
+.template-article__image {
+  grid-row: 1;
+  max-width: 90%;
+}
+
+.template-article__special-image {
+  margin-bottom: 38px;
+  max-width: 360px;
+}
+
+@media (min-width: 760px) {
+
+  .template-article {
+    &:nth-of-type(odd) {
+      .template-article__image {
+        order: -1;
+      }
+    }
+  }
+
+  .template-article-content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  .template-article__text-container {
+    grid-row: auto;
+  }
+
+  .template-article__header {
+    font-size: 30px;
+  }
+
+  .template-article__paragraph {
+    font-size: 18px;
+  }
+
+  .template-article__image {
+    grid-row: auto;
+  }
+
+}

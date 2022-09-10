@@ -1,0 +1,98 @@
+@use '../global/var';
+
+.features-container {
+  background-color: white;
+}
+
+.features-container__list {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: 122px;
+  max-width: var.$width-cap;
+  padding: 0 15px;
+}
+
+$w: 51.5px;
+$h: 52px;
+
+.features-container__link {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    background-color: #e3e3e3;
+    .features-container__image-1 {
+      top: -53px;
+      clip-path: polygon(0 $h, $w $h, $w calc(2 * $h), 0 calc(2 * $h));
+    }
+    .features-container__image-2 {
+      top: -53px;
+      clip-path: polygon($w $h, calc(2 * $w) $h, calc(2 * $w) calc(2 * $h), 0 calc(2 * $h));
+    }
+    .features-container__image-3 {
+      top: -53px;
+      clip-path: polygon(calc(2 * $w) $h, calc(3 * $w) $h, calc(3 * $w) calc(2 * $h), 0 calc(2 * $h));
+    }
+    .features-container__image-4 {
+      top: -53px;
+      clip-path: polygon(calc(3 * $w) $h, calc(4 * $w) $h, calc(4 * $w) calc(2 * $h), 0 calc(2 * $h));
+    }
+  }
+}
+
+.features-container__image-container {
+  position: relative;
+  top: 5px;
+  width: 51.5px;
+  height: 52px;
+  overflow: hidden;
+}
+
+.features-container__image {
+  position: relative;
+}
+
+
+
+.features-container__image-1 {
+  clip-path: polygon(0 0, $w 0, $w $h, 0 $h);
+}
+
+.features-container__image-2 {
+  clip-path: polygon($w 0, calc(2 * $w) 0, calc(2 * $w) $h, $w $h);
+  left: -$w;
+}
+
+.features-container__image-3 {
+  clip-path: polygon(calc(2 * $w) 0, calc(3 * $w) 0, calc(3 * $w) $h, calc(2 * $w) $h);
+  left: calc(-2 * $w);
+}
+
+.features-container__image-4 {
+  clip-path: polygon(calc(3 * $w) 0, calc(4 * $w) 0, calc(4 * $w) $h, calc(3 * $w) $h);
+  left: calc(-3 * $w);
+}
+
+.features-container__span {
+  position: relative;
+  top: -5px;
+  font-size: 17px;
+  color: #444;
+}
+
+
+/******************** MEDIA QUERIES *********************/
+
+@media (min-width: 760px) {
+
+  .features-container__list {
+    grid-template-columns: repeat(4, 25%);
+  }
+
+}

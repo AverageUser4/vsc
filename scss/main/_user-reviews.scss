@@ -1,0 +1,90 @@
+@use '../global/var';
+
+.user-reviews {
+  background-color: var.$dark-white;
+  padding: 64px 32px;
+}
+
+.user-reviews-content {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  max-width: var.$width-cap;
+  margin: auto;
+}
+
+.user-reviews-content-content {
+  display: grid;
+  row-gap: 32px;
+}
+
+.user-reviews__button {
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: inherit;
+  font-weight: bold;
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.user-review {
+  display: grid;
+  grid-template-areas:
+    "image names"
+    "image text";
+  gap: 8px 12px;
+  justify-content: center;
+
+  position: relative;
+  padding: 0 16px;
+}
+
+.user-review__twitter-icon-image {
+  width: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-review__image-container {
+  grid-area: image;
+}
+
+.user-review__image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+}
+
+.user-review__name-and-profilename {
+  grid-area: names;
+}
+
+.user-review__name {
+  margin: 0;
+  font-size: 12.6px;
+  color: #000;
+}
+
+.user-review__profilename {
+  font-size: 10.8px;
+  color: #6e6e6e;
+}
+
+.user-review__text {
+  grid-area: text;
+  margin: 0;
+  max-width: 700px;
+  line-height: 120%;
+  color: #6e6e6e;
+}
+
+@media (min-width: 980px) {
+
+  .user-reviews-content-content {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+  }
+
+}

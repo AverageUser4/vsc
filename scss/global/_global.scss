@@ -60,20 +60,24 @@ ul {
 .download-button {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  align-items: center;
   align-content: center;
-  column-gap: 6px;
-  font-weight: bold;
-}
-.download-button__top {
-
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas:
+    "icon top-span"
+    "bottom-span bottom-span";
+  row-gap: 8px;
 }
 .download-button__icon {
-  width: 18px;
+  grid-area: icon;
+  width: 16px;
 }
 .download-button__top-span {
-
+  grid-area: top-span;
+  font-size: 16px;
+  font-weight: bold;
 }
 .download-button__bottom-span {
-
+  grid-area: bottom-span;
+  font-size: 11px;
 }
